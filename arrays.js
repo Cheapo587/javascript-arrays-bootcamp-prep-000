@@ -40,7 +40,8 @@ function accessElementInArray(arrayOne, index){
 //REMOVALS
 //from beginnings
 function destructivelyRemoveElementFromBeginningOfArray(arrayOne){
-  return arrayOne.shift()
+  arrayOne.shift()
+  return arrayOne
 }
 
 function removeElementFromBeginningOfArray(arrayOne){
