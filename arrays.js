@@ -17,7 +17,7 @@ function addElementToBeginningOfArray(arrayOne, element){
 }
 
 function destructivelyAddElementToBeginningOfArray(arrayOne, element){
-  arrayOne = [element, ...arrayOne]
+  var arrayTwo = [element, ...arrayOne]
   return arrayOne
 }
 
@@ -52,4 +52,9 @@ function removeElementFromBeginningOfArray(arrayOne){
 function destructivelyRemoveElementFromEndOfArray(arrayOne){
   arrayOne = arrayOne.pop()
   return arrayOne
+}
+
+function removeElementFromEndOfArray(arrayOne){
+  var arrayTwo = arrayOne.slice(0, arrayOne.length - 1)
+  return arrayTwo
 }
