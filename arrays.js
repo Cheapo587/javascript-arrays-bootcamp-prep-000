@@ -10,16 +10,18 @@ chocolateBars.push("butter fingers")
 
 chocolateBars.unshift("heath")
 
+//ADDS to BEGINNING
 function addElementToBeginningOfArray(arrayOne, element){
   var arrayTwo = [element, ...arrayOne]
   return arrayTwo
 }
 
-function desstructivelyAddElementToBeginningOfArray(arrayOne, element){
+function destructivelyAddElementToBeginningOfArray(arrayOne, element){
   arrayOne = [element, ...arrayOne]
   return arrayOne
 }
 
+//ADDS TO END
 function addElementToEndOfArray(arrayOne, element){
   arrayTwo = [...arrayOne, element]
   return arrayTwo
@@ -30,10 +32,13 @@ function destructivelyAddElementToEndOfArray(arrayOne, element){
   return arrayOne
 }
 
+//access element at index
 function accessElementInArray(arrayOne, index){
   return arrayOne[index]
 }
 
+//REMOVALS
+//from beginnings
 function destructivelyRemoveElementFromBeginningOfArray(arrayOne){
   return arrayOne.shift()
 }
@@ -43,9 +48,8 @@ function removeElementFromBeginningOfArray(arrayOne){
    return arrayTwo
 }
 
+//from ends
 function destructivelyRemoveElementFromEndOfArray(arrayOne){
   arrayOne = arrayOne.pop()
   return arrayOne
 }
-
-
