@@ -30,3 +30,13 @@ function destructivelyAddElementToEndOfArray(arrayOne, element){
   return arrayOne
 }
 
+function accessElementInArray(arrayOne, index){
+  return arrayOne[index]  
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(arrayOne){
+  return arrayOne.shift()
+}
+
+
+
